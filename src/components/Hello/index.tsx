@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Title, Image, ImgContainer, ChampionImage, ChampionName } from './styles.js'
+import { Title, Image, ImgContainer, ChampionImage, ChampionName } from './styles'
 import { Champion } from '../../models/champion'
 import WebpackLogo from '../../assets/webpack-logo.png'
 import ReactLogo from '../../assets/react-logo.png'
@@ -21,7 +21,7 @@ export const Hello: React.FC = () => {
 
   return (
     <>
-      <Title>Hello React Developer!</Title>
+      <Title color='#007ACC'>Hello React Developer!</Title>
       <ImgContainer>
         <Image src={ReactLogo} alt="webpack" />
         <p>+</p>

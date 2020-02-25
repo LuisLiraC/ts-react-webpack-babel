@@ -19,7 +19,7 @@ module.exports = {
   optimization: {
     minimizer: [new TerserPlugin()],
     splitChunks: {
-      chunks: 'async',
+      chunks: 'all',
       name: true,
       cacheGroups: {
         vendors: {

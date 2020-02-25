@@ -1,8 +1,12 @@
 import styled from 'styled-components'
 
+interface StyledProps {
+  color: string
+}
+
 export const Title = styled.h1`
   color: white;
-  background-color: black;
+  background-color: ${(props: StyledProps) => props.color ? props.color : 'black'};
   padding: 20px;
   margin: 0;
 `
