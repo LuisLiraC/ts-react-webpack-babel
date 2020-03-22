@@ -34,7 +34,7 @@ export const Hello: React.FC = () => {
       {
         champion && (
           <div>
-            <ChampionImage src={champion.image_url} alt="champion_img" />
+            <ChampionImage src={`https://${champion.champion_image}`} alt="champion_img" />
             <ChampionName>{champion.name}</ChampionName>
           </div>
         )
